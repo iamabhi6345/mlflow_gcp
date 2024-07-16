@@ -7,7 +7,7 @@ gcloud compute instances create "${VM_NAME}" \
   --image "${IMAGE_NAME}" \
   --image-project "${IMAGE_PROJECT_ID}" \
   --boot-disk-auto-delete \
-  --labels="${LABELS}" \
+  --labels "${LABELS}" \
   --machine-type="${MACHINE_TYPE}" \
   --zone="${ZONE}" \
   --no-address \
@@ -26,3 +26,4 @@ postgres_host="${POSTGRES_HOST}",\
 postgres_port="${POSTGRES_PORT}",\
 postgres_database_name="${POSTGRES_DATABASE_NAME}",\
 postgres_password_secret_name="${POSTGRES_PASSWORD_SECRET_NAME}"
+
